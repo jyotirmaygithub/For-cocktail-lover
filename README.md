@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# <<----------------concepts learned throughout the project------------>>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 1. (*) the catch-all or fallback route (<Route path="*">) is there to handle URLs that don't match any of your explicitly defined routes. Bascially it makes our application user friendly where even after not matching the exact path , user will be able to see a default page
 
-## Available Scripts
+This route is often used as a catch-all or fallback route. It will match any URL path that hasn't been matched by the preceding routes. Without this catch-all route, if a user enters a URL that doesn't match any defined route, React Router may issue a warning or not render anything.
 
-In the project directory, you can run:
+2. from next time , if i will not have any subroutes then i will gonna write all the route in the  appjs file of the react application. from next time does not matter how many route you have try to declare them in the appjs where your main root of the routers lies 
 
-### `npm start`
+to get actuall implementation of the above content look at the working of appjs and footerjs pages of the application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# to get the functionality of top loading bar copy and paste below command on vs code terminal
+npm install react-top-loading-bar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# to receive and send emails from you site download npm package of emailjs
+# explaination 
+EmailJS helps to send emails using client-side technologies only. No server is required – just connect EmailJS to one of the supported email services, create an email template, and use our SDK to trigger an email.
+# code for email ------------->>>>> npm i @emailjs/browser
 
-### `npm test`
+# Search cocktail by name
+www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Filter by Glass
+www.thecocktaildb.com/api/json/v1/1/filter.php?g=Cocktail_glass
 
-### `npm run build`
+# www.thecocktaildb.com/images/ingredients/gin.png
+(700x700 pixels)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Search by ingredient
+www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin
