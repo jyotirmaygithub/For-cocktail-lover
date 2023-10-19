@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Nav from "./components/Navbar";
+import Aboutus from "./pages/About";
+import Logo from "./pages/Logo";
+import Singlepg from "./pages/Singlepage";
+import Contact from "./pages/Contact";
+import Api from "./pages/Api";
+import Feedback from "./pages/Feedback";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <Router>
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Logo />} />
+            <Route path="/about" element={<Aboutus />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="drinks/:idDrink" element={<Singlepg />} />
+            <Route path="/api" element={<Api />} />
+            <Route path="/feedback" element={<Feedback/>}/>
+          </Routes>
+        </Router>
+      </div>
+    </>
   );
 }
 

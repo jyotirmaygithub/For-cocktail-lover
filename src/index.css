@@ -1,13 +1,261 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Dela+Gothic+One&family=Kanit:wght@300&family=Tilt+Prism&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+:root {
+  --text-font: "Arvo", serif;
+  --one-font-family: "Tilt Prism", cursive;
+  --two-font-family: "Dela Gothic One", cursive;
+  --third-font-family: "Concert One", cursive;
+  --fourth-font-family: "Kanit", sans-serif;
+  --main-color: #f1c40f;
+  --padding10: 10px;
+  --padding20: 20px;
+  --padding30: 30px;
+  --padding50 : 50px;
+  --margin10: 10px;
+  --margin20: 20px;
+  --margin30: 30px;
+}
+.universal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.universal2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-addition,
+.inner-box-des,
+.universal-just {
+  justify-content: space-between;
+}
+.inner-box-des {
+  padding: 0px 150px;
+}
+.cheers-img {
+  width: 100px;
+}
+li {
+  padding: var(--padding30);
+  list-style: none;
+  text-decoration: none;
+}
+.input-change {
+  margin: var(--margin20);
+  width: 60vw;
+  padding: var(--padding20);
+  border: none;
+  border-bottom: 2px white solid;
+  box-shadow: none;
+  outline: none;
+  font-size: 15px;
+}
+button {
+  border: none;
+  outline: none;
+  background: var(--main-color);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+}
+.container {
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.single-box {
+  width: 25vw;
+  height: 70vh;
+  margin: 20px;
+}
+.image-box2 {
+  width: 38vw;
+}
+.image-setting {
+  width: 100%;
+}
+.drink-name,
+.no-cocktails {
+  font-size: 35px;
+  font-family: "Tilt Prism", cursive;
+  font-family: var(--one-font-family);
+}
+.drink-ctg {
+  font-size: 15px;
+  font-family: var(--two-font-family);
+}
+.glass-name,
+li {
+  font-size: 30px;
+  font-family: var(--third-font-family);
+}
+.link {
+  text-decoration: none;
+}
+.spin-box {
+  height: 50vh;
+  width: 100vw;
+}
+.beer-gif {
+  border-radius: 100px;
+}
+.press-box > * {
+  font-family: var(--fourth-font-family);
+  width: 50vw;
+  padding: 15px 40px;
+}
+.heading-pad {
+  padding: 50px 0px;
+}
+.naming-size {
+  padding: 5px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  margin: 10px;
+}
+.press-box-drink-name {
+  font-size: 50px;
+}
+.aboutus-box {
+  padding: 150px;
+}
+.aboutus {
+  font-family: var(--fourth-font-family);
+}
+/* footers content will be below this */
+footer {
+  height: 40vh;
+  width: 100vw;
+}
+.footer-logo {
+  width: 150px;
+}
+.footer-content-box {
+  width: 100vw;
+  justify-content: space-evenly;
+}
+.cheers h1 {
+  font-family: var(--third-font-family);
+}
+.input-change2 {
+  width: 20vw;
+  border-bottom: 2px var(--main-color) solid;
+}
+.for-label {
+  font-family: var(--fourth-font-family);
+}
+/* for form css */
+.form-box {
+  width: 60vw;
+  padding: 30px;
+}
+form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+}
+input {
+  width: 100%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+
+  &:focus {
+    border: 2px solid var(--main-color);
+  }
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+
+  &:focus {
+    border: 2px solid var(--main-color);
+  }
+}
+
+label {
+  margin-top: 1rem;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background: var(--main-color);
+  color: white;
+  border: none;
+}
+/* for alert */
+.alert-pop {
+  height: 60px;
+  justify-content: flex-start;
+  font-family: var(--third-font-family);
+}
+.alert-pop p {
+  font-size: 25px;
+  width: 100%;
+  padding: 10px;
+}
+.footer-link {
+  font-size: 17px;
+  padding: 8px;
+  font-family: var(--third-font-family);
+}
+.footer-link-add:hover {
+  text-decoration: dashed;
+}
+.universal-just {
+  margin: 15px 0px;
+}
+.link-box-container {
+  width: 100vw;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+.link-box {
+  padding: 40px;
+  line-height: 1;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+}
+.universal-just h3:first-child {
+  font-family: var(--third-font-family);
+}
+.link-box p:nth-child(2) {
+  font-family: var(--fourth-font-family);
+}
+.dynamic-box {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: var(--main-color);
+}
+/* feedback form  */
+.textarea-box,.comment-box{
+  padding: var(--padding50);
+}
+.textarea-changes{
+  max-height: none;
 }
