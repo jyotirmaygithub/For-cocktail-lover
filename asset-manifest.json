@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/For-cocktail-lover/static/css/main.9f760813.css",
+    "main.js": "/For-cocktail-lover/static/js/main.92b8f0bc.js",
+    "static/js/787.2d6b8271.chunk.js": "/For-cocktail-lover/static/js/787.2d6b8271.chunk.js",
+    "static/media/Beer loader.gif": "/For-cocktail-lover/static/media/Beer loader.0f3adaa9673c94e34f04.gif",
+    "static/media/cheers.png": "/For-cocktail-lover/static/media/cheers.6083da07d81b4ac8c964.png",
+    "index.html": "/For-cocktail-lover/index.html",
+    "main.9f760813.css.map": "/For-cocktail-lover/static/css/main.9f760813.css.map",
+    "main.92b8f0bc.js.map": "/For-cocktail-lover/static/js/main.92b8f0bc.js.map",
+    "787.2d6b8271.chunk.js.map": "/For-cocktail-lover/static/js/787.2d6b8271.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f760813.css",
+    "static/js/main.92b8f0bc.js"
+  ]
+}
