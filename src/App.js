@@ -15,7 +15,7 @@ function App() {
         <Router>
           <Nav />
           <Routes>
-            <Route path="/" element={<Logo />} />
+            <Route path="*" element={<Logo />} />
             <Route path="/about" element={<Aboutus />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="drinks/:idDrink" element={<Singlepg />} />
