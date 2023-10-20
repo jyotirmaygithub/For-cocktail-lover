@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div>
       <nav className="universal nav-addition">
-        <Link className="universal cheers link" to="/">
+        <Link className="universal cheers link" to="*">
           <img className="cheers-img" src={Cheers} alt="" />
           <li>Cheers</li>
         </Link>

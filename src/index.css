@@ -18,10 +18,12 @@
   --padding10: 10px;
   --padding20: 20px;
   --padding30: 30px;
+  --padding40px : 40px;
   --padding50 : 50px;
   --margin10: 10px;
   --margin20: 20px;
   --margin30: 30px;
+  --universal-width : 100%;
 }
 .universal {
   display: flex;
@@ -34,15 +36,20 @@
   justify-content: center;
   align-items: center;
 }
-
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .nav-addition,
 .inner-box-des,
 .universal-just {
   justify-content: space-between;
 }
-.inner-box-des {
+/* .inner-box-des {
   padding: 0px 150px;
-}
+} */
 .cheers-img {
   width: 100px;
 }
@@ -60,13 +67,18 @@ li {
   box-shadow: none;
   outline: none;
   font-size: 15px;
+  &:focus{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
 }
 button {
   border: none;
   outline: none;
   background: var(--main-color);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
   color: black;
 }
@@ -76,7 +88,6 @@ button {
 }
 .single-box {
   width: 25vw;
-  height: 70vh;
   margin: 20px;
 }
 .image-box2 {
@@ -123,6 +134,7 @@ li {
   background-color: var(--main-color);
   border-radius: 10px;
   margin: 10px;
+  line-height: 2;
 }
 .press-box-drink-name {
   font-size: 50px;
@@ -134,15 +146,11 @@ li {
   font-family: var(--fourth-font-family);
 }
 /* footers content will be below this */
-footer {
-  height: 40vh;
-  width: 100vw;
-}
 .footer-logo {
   width: 150px;
 }
 .footer-content-box {
-  width: 100vw;
+  width: 98vw;
   justify-content: space-evenly;
 }
 .cheers h1 {
@@ -230,11 +238,11 @@ input[type="submit"] {
   margin: 15px 0px;
 }
 .link-box-container {
-  width: 100vw;
   justify-content: space-evenly;
   margin: 20px;
+  width: var(--universal-width);
 }
-.link-box {
+.link-box,.review-box {
   padding: 40px;
   line-height: 1;
   border: 2px solid var(--main-color);
@@ -246,16 +254,45 @@ input[type="submit"] {
 .link-box p:nth-child(2) {
   font-family: var(--fourth-font-family);
 }
+.popup-box{
+  height: 10vh;
+}
 .dynamic-box {
   padding: 20px;
   font-size: 20px;
   font-weight: bolder;
   background-color: var(--main-color);
+  font-style: var(--third-font-family);
 }
+
 /* feedback form  */
 .textarea-box,.comment-box{
-  padding: var(--padding50);
+  padding: var(--padding40px);
+}
+.comment-box{
+  line-height: 2;
+  font-family: var(--fourth-font-family);
+}
+.textarea-box button:nth-child(2){
+  margin: var(--margin10);
 }
 .textarea-changes{
   max-height: none;
+}
+.review-box{
+  margin: 20px 30px;
+  line-height: 2.0;
+  font-family: var(--fourth-font-family);
+  padding: 30px;
+  /* border: none; */
+}
+@media screen and (max-width: 900px) {
+  .link-box-container{
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+  .link-box{
+    margin: 20px;
+  }
+  
 }
