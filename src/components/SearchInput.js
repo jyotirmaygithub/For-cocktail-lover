@@ -26,13 +26,13 @@ export default function Url() {
         progress={progressbar}
         onLoaderFinished={() => setProgressbar(0)}
       />
-      <div className="mt-72">
+      <div className="mt-20">
         <div className="universal search-contain">
           <input
             onChange={textwriting}
             type="text"
-            placeholder="Cheers to the moments that take our breath away."
-            className="input-change"
+            placeholder="Cheers to the moments"
+            className="input-change border-none bg-transparent "
           />
         </div>
         <article>

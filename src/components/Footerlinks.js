@@ -15,9 +15,9 @@ export default function Footerlinks() {
           <Link to="/api" className="link">
             <li className="footer-link">API</li>
           </Link>
-          <Link to="/feedback" className="link">
+          {/* <Link to="/feedback" className="link">
           <li className="footer-link">Comments</li>
-          </Link>
+          </Link> */}
         </ul>
       </nav>
     </div>

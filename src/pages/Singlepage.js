@@ -64,10 +64,10 @@ export default function Singlepage() {
         <p className="press-box-drink-name drink-name">{strDrink}</p>
       </div>
       <div className="universal inner-box-des">
-        <div className="image-box2">
+        <div className="m-4 mx-8">
           <img className="image-setting" src={strDrinkThumb} alt="" />
         </div>
-        <div className="universal2 press-box">
+        <div className="flex flex-col press-box space-y-6 mx-4 my-6">
           <h1>
             <span className="naming-size">Name :</span> {strDrink}
           </h1>
