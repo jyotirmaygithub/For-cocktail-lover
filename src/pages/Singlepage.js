@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
-import Footer from "../components/Footer";
 
 export default function Singlepage() {
   const { idDrink } = useParams();
@@ -103,7 +102,6 @@ export default function Singlepage() {
         </div>
       </div>
     </div>
-    <Footer/>
     </>
   );
 }

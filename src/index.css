@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Dela+Gothic+One&family=Kanit:wght@300&family=Tilt+Prism&display=swap");
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  background-color: black;
+  /* background-color: black; */
   color: white;
+}
+body{
+  background-color: black;
 }
 :root {
   --text-font: "Arvo", serif;

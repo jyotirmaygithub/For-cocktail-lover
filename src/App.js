@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Aboutus from "./pages/About";
-import Logo from "./pages/Logo";
+import HomePage from "./pages/HomePage";
 import Singlepg from "./pages/Singlepage";
 import Contact from "./pages/Contact";
 import Api from "./pages/Api";
@@ -13,9 +13,9 @@ function App() {
     <>
       <div className="App">
         <Router>
-          <Nav />
+          <Navbar />
           <Routes>
-            <Route path="*" element={<Logo />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<Aboutus />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="drinks/:idDrink" element={<Singlepg />} />

@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Footer from "../components/Footer";
 
 export default function Contact() {
   const form = useRef();
@@ -82,7 +81,6 @@ function timer(){
           </form>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

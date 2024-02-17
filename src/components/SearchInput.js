@@ -26,8 +26,8 @@ export default function Url() {
         progress={progressbar}
         onLoaderFinished={() => setProgressbar(0)}
       />
-      <div>
-        <div className="universal search-contain ">
+      <div className="mt-72">
+        <div className="universal search-contain">
           <input
             onChange={textwriting}
             type="text"
