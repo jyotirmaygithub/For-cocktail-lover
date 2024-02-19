@@ -1,19 +1,24 @@
 import React from "react";
 import Footerlinks from "./Footerlinks";
-import Logo from "../images/cheers.png"
-import { LocalBarOutlined } from "@mui/icons-material"
+import { useNavigate } from "react-router-dom";
+import { LocalBarOutlined } from "@mui/icons-material";
 
 export default function Footer() {
+  const  navigation  = useNavigate();
+
+  function handleLogo() {
+    navigation(`/`);
+  }
   return (
     <div>
-      <footer className="universal2 footer-add my-8">
+      <footer className="universal2 footer-add my-5">
         <div className="universal footer-content-box">
-          <div className="universal cheers space-x-1">
-            <LocalBarOutlined style={{fontSize:"30px"}}/>
+          <div className="universal cheers space-x-1 cursor-pointer" onClick={handleLogo}>
+            <LocalBarOutlined style={{ fontSize: "30px" }} />
             <h1>CockTail</h1>
           </div>
           <div>
-            <Footerlinks />           
+            <Footerlinks />
           </div>
         </div>
         <div>

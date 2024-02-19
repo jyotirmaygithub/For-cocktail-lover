@@ -52,13 +52,14 @@ function timer(){
 }
   return (
     <>
-      <div className=" universal alert-pop">{filter && <p style={{backgroundColor:`${color}`}}
+      <div className=" universal alert-pop mt-20">{filter &&  <p className="bg-yellow-500"
       >{alert}</p>}</div>
-      <div className="universal2">
+      <div className="universal2 mt-5">
         <div className="form-box">
           <form ref={form} onSubmit={sendemail}>
             <label>Name</label>
             <input
+            className="bg-transparent "
               onChange={(e) => setuser(e.target.value)}
               value={user}
               type="text"
@@ -66,6 +67,7 @@ function timer(){
             />
             <label>Email</label>
             <input
+            className="bg-transparent "
               onChange={(e) => setuseremail(e.target.value)}
               value={useremail}
               type="email"
@@ -73,6 +75,7 @@ function timer(){
             />
             <label>Message</label>
             <textarea
+            className="bg-transparent"
               onChange={(e) => setmessage(e.target.value)}
               value={message}
               name="message"

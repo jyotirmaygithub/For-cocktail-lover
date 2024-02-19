@@ -10,10 +10,12 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { LocalBar } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 const pages = ["About", "Contact"];
 
 export default function Home() {
+  const  navigation  = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -24,17 +26,21 @@ export default function Home() {
     setAnchorElNav(null);
   };
 
+  function handleLogo(){
+    navigation(`/`)
+  }
+
   return (
     <>
       <AppBar sx={{ background: "black", position: "fixed" }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <LocalBar sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+            <LocalBar className="cursor-pointer" onClick={handleLogo} sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
             <Typography
+            onClick={handleLogo}
               variant="h6"
               noWrap
-              component="a"
-              href="#app-bar-with-responsive-menu"
+              className="cursor-pointer"
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
@@ -42,13 +48,13 @@ export default function Home() {
                 fontWeight: 700,
                 color: "inherit",
                 textDecoration: "none",
+                
               }}
             >
               CockTail
             </Typography>
 
             <Box
-              className="sexy"
               sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
             >
               <IconButton
@@ -89,8 +95,10 @@ export default function Home() {
               </Menu>
             </Box>
 
-            <LocalBar sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+            <LocalBar className="cursor-pointer" onClick={handleLogo} sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
             <Typography
+            className="cursor-pointer"
+            onClick={handleLogo}
               variant="h5"
               noWrap
               sx={{

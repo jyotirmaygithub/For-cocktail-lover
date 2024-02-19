@@ -7,7 +7,6 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  /* background-color: black; */
   color: white;
 }
 body{
@@ -42,7 +41,6 @@ body{
   align-items: center;
 }
 .App{
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,9 +50,6 @@ body{
 .universal-just {
   justify-content: space-between;
 }
-/* .inner-box-des {
-  padding: 0px 150px;
-} */
 .cheers-img {
   width: 100px;
 }
@@ -95,9 +90,6 @@ button {
   width: 25vw;
   margin: 20px;
 }
-/* .image-box2 {
-  width: 38vw;
-} */
 .image-setting {
   width: 100%;
 }
@@ -113,7 +105,6 @@ button {
 }
 .glass-name,
 li {
-  /* font-size: 30px; */
   font-family: var(--third-font-family);
 }
 .link {
@@ -128,8 +119,6 @@ li {
 }
 .press-box > * {
   font-family: var(--fourth-font-family);
-  /* width: 50vw; */
-  /* padding: 15px 40px; */
 }
 .heading-pad {
   padding: 50px 0px;
@@ -171,7 +160,6 @@ li {
 /* for form css */
 .form-box {
   width: 60vw;
-  padding: 30px;
 }
 form {
   display: flex;
@@ -239,17 +227,12 @@ input[type="submit"] {
 .footer-link-add:hover {
   text-decoration: dashed;
 }
-.universal-just {
-  margin: 15px 0px;
-}
 .link-box-container {
   justify-content: space-evenly;
   margin: 20px;
   width: var(--universal-width);
 }
 .link-box,.review-box {
-  padding: 40px;
-  line-height: 1;
   border: 2px solid var(--main-color);
   border-radius: 10px;
 }
@@ -296,10 +279,6 @@ input[type="submit"] {
     flex-wrap: wrap;
     margin: 0px;
   }
-  .link-box{
-    margin: 20px;
-  }
-  
 }
 @media screen and (max-width :750px) {
   .inner-box-des{
