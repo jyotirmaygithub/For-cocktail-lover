@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   const form = useRef();
@@ -83,6 +84,9 @@ function timer(){
             <input type="submit" value="Send" />
           </form>
         </div>
+      </div>
+      <div className="fixed bottom-0">
+        <Footer/>
       </div>
     </>
   );

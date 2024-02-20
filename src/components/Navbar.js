@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 const pages = ["About", "Contact"];
 
 export default function Home() {
-  const  navigation  = useNavigate();
+  const navigation = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -26,8 +26,15 @@ export default function Home() {
     setAnchorElNav(null);
   };
 
-  function handleLogo(){
-    navigation(`/`)
+  function handleLogo() {
+    navigation(`/`);
+  }
+  function handleLocation(page) {
+    if (page === "About") {
+      navigation("/about");
+    } else {
+      navigation(`/contact`);
+    }
   }
 
   return (
@@ -35,9 +42,13 @@ export default function Home() {
       <AppBar sx={{ background: "black", position: "fixed" }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <LocalBar className="cursor-pointer" onClick={handleLogo} sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+            <LocalBar
+              className="cursor-pointer"
+              onClick={handleLogo}
+              sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            />
             <Typography
-            onClick={handleLogo}
+              onClick={handleLogo}
               variant="h6"
               noWrap
               className="cursor-pointer"
@@ -48,15 +59,12 @@ export default function Home() {
                 fontWeight: 700,
                 color: "inherit",
                 textDecoration: "none",
-                
               }}
             >
               CockTail
             </Typography>
 
-            <Box
-              sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
-            >
+            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -87,7 +95,7 @@ export default function Home() {
               >
                 {pages.map((page) => (
                   <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center" style={{ color: "black" }}>
+                    <Typography textAlign="center" onClick={()=>handleLocation(page)} style={{ color: "black" }}>
                       {page}
                     </Typography>
                   </MenuItem>
@@ -95,10 +103,14 @@ export default function Home() {
               </Menu>
             </Box>
 
-            <LocalBar className="cursor-pointer" onClick={handleLogo} sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+            <LocalBar
+              className="cursor-pointer"
+              onClick={handleLogo}
+              sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+            />
             <Typography
-            className="cursor-pointer"
-            onClick={handleLogo}
+              className="cursor-pointer"
+              onClick={handleLogo}
               variant="h5"
               noWrap
               sx={{
@@ -117,7 +129,7 @@ export default function Home() {
               {pages.map((page) => (
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
+                  onClick={() => handleLocation(page)}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
                   {page}

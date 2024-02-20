@@ -133,9 +133,6 @@ li {
 .press-box-drink-name {
   font-size: 50px;
 }
-.aboutus-box {
-  padding: 150px;
-}
 .aboutus {
   font-family: var(--fourth-font-family);
 }
@@ -272,7 +269,6 @@ input[type="submit"] {
   line-height: 2.0;
   font-family: var(--fourth-font-family);
   padding: 30px;
-  /* border: none; */
 }
 @media screen and (max-width: 900px) {
   .link-box-container{
