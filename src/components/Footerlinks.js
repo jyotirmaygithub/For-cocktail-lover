@@ -15,17 +15,9 @@ export default function Footerlinks() {
           <Link to="/api" className="link">
             <li className="footer-link">API</li>
           </Link>
-          <a
-            href="https://github.com/jyotirmaygithub/For-cocktail-lover"
-            className="link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <li className="footer-link">Source code</li>
-          </a>
-          <Link to="/feedback" className="link">
+          {/* <Link to="/feedback" className="link">
           <li className="footer-link">Comments</li>
-          </Link>
+          </Link> */}
         </ul>
       </nav>
     </div>

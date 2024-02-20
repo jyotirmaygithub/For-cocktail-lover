@@ -1,11 +1,11 @@
 import React from "react";
-import Nav from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Aboutus from "./pages/About";
-import Logo from "./pages/Logo";
+import HomePage from "./pages/HomePage";
 import Singlepg from "./pages/Singlepage";
 import Contact from "./pages/Contact";
 import Api from "./pages/Api";
-import Feedback from "./pages/Feedback";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,14 +13,13 @@ function App() {
     <>
       <div className="App">
         <Router>
-          <Nav />
+          <Navbar />
           <Routes>
-            <Route path="*" element={<Logo />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<Aboutus />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="drinks/:idDrink" element={<Singlepg />} />
+            <Route path="drinks/:idDrink" element={<><Singlepg /><Footer /></>} />
             <Route path="/api" element={<Api />} />
-            <Route path="/feedback" element={<Feedback/>}/>
           </Routes>
         </Router>
       </div>

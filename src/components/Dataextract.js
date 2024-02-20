@@ -34,7 +34,7 @@ export default function Dataextract(props) {
   return (
     <>
       {loading && <Spinner />}
-      <div className="universal container">
+      <div className="universal flex flex-wrap">
         {dataarray === null ? (
           <p className="no-cocktails">
             No cocktails : Matched your searched criteria
@@ -45,7 +45,7 @@ export default function Dataextract(props) {
               element;
 
             return (
-              <Link className="link" key={index} to={`/drinks/${idDrink}`}>
+              <Link className="link m-4" key={index} to={`/drinks/${idDrink}`}>
                 <div key={index} className="single-box">
                   <div className="image-box">
                     <img className="image-setting" src={strDrinkThumb} alt="" />

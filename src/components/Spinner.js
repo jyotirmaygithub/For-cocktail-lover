@@ -1,5 +1,5 @@
 import React from 'react'
-import Beer from  './Beer loader.gif'
+import Beer from  '../images/Beer loader.gif'
 
 export default function Spinner() {
   return (
