@@ -84,19 +84,19 @@ export default function Singlepage() {
           {/* instructions from below  */}
           <p>
             <span className="naming-size">Required Ingredients :</span>
-            <span>{strIngredient1}</span>
-            <span>{strIngredient2}</span>
-            <span>{strIngredient3}</span>
-            <span>{strIngredient4}</span>
+            <span>{strIngredient1}</span>,{" "}
+            <span>{strIngredient2}</span>,{" "}
+            <span>{strIngredient3}</span>,{" "}
+            <span>{strIngredient4}</span>,{" "}
             <span>{strIngredient5}</span>
           </p>
           {/* measuring volumes  */}
           <p>
             <span className="naming-size">Measurment : </span>
-            <span>{strMeasure1}</span>
-            <span>{strMeasure2}</span>
-            <span>{strMeasure3}</span>
-            <span>{strMeasure4}</span>
+            <span>{strMeasure1}</span>,{" "}
+            <span>{strMeasure2}</span>,{" "}
+            <span>{strMeasure3}</span>,{" "}
+            <span>{strMeasure4}</span>,{" "}
             <span>{strMeasure5}</span>
           </p>
         </div>

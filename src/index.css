@@ -124,6 +124,7 @@ li {
   padding: 50px 0px;
 }
 .naming-size {
+  color: black;
   padding: 5px;
   background-color: var(--main-color);
   border-radius: 10px;
@@ -270,14 +271,22 @@ input[type="submit"] {
   font-family: var(--fourth-font-family);
   padding: 30px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .link-box-container{
     flex-wrap: wrap;
     margin: 0px;
   }
+  .single-box{
+    width: 40vw;
+  }
 }
-@media screen and (max-width :750px) {
+@media screen and (max-width: 750px) {
   .inner-box-des{
     display: grid;
+  }
+}
+@media screen and (max-width: 500px) {
+  .single-box{
+    width: 75vw;
   }
 }
